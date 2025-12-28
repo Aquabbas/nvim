@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Editor artifacts
+*.swp
+*.swo
+*~
+
+# NeoVim artifacts
+spell/
+lazy-lock.json
+
+# LazyVim development
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
