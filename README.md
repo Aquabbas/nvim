@@ -60,6 +60,22 @@ mv ~/.config/nvim ~/.config/nvim.bak
 git clone https://github.com/Aquabbas/nvim.git ~/.config/nvim
 ```
 
+### Option C: Test drive (keep your existing config)
+
+Uses `NVIM_APPNAME` (NeoVim 0.9+) for isolated configs:
+
+```bash
+# Clone to a separate directory
+git clone https://github.com/Aquabbas/nvim.git ~/.config/aquavim
+
+# Add alias to your shell config
+echo 'alias aquavim="NVIM_APPNAME=aquavim nvim"' >> ~/.zshrc  # or ~/.bashrc
+
+# Reload and run
+source ~/.zshrc
+aquavim
+```
+
 ### First Launch
 
 1. Open NeoVim - plugins will auto-install
